@@ -1,0 +1,16 @@
+project      = "REPLACE_ME" # e.g. "my-project"
+region       = "REPLACE_ME" # e.g. "us-east1"
+zone         = "REPLACE_ME" # e.g. "us-east1-c"
+machine_type = "REPLACE_ME" # e.g. "n2-standard-4"
+disk_size    = "REPLACE_ME" # e.g. "100"
+os_image     = "REPLACE_ME" # e.g. "ubuntu-os-cloud/ubuntu-2004-lts"
+vm_name      = "REPLACE_ME" # e.g. "my-rei-vm"
+#
+# For more information on the below variables, please reference:
+# https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options
+# 
+# Defaults are provided via the variables.tf file and can be overridden here if needed
+# 
+# maintenance       = "REPLACE_ME" # "MIGRATE" or "TERMINATE"
+# preemptible       = "REPLACE_ME" # "true" or "false"
+# automatic_restart = "REPLACE_ME" # "true" or "false"
