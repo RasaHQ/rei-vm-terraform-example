@@ -8,6 +8,7 @@ Running the REI installation script will install a [KIND](https://kind.sigs.k8s.
 ---
 ### Pre-requisites
 - Terraform is installed (see: https://www.terraform.io/downloads)
+- gcloud SDK is installed (see: https://cloud.google.com/sdk/docs/install)
 - You have access to a GCP project with compute APIs enabled and compute roles assigned to your GCP account. 
 - You are authenticated with gcloud to an account that has compute privileges in the targeted GCP project. **Note**: If you receive a 400 error this may be because your need to authenticate with the application-default flow: `gcloud auth application-default login`. (There are other methods for authenticating Terraform but those are beyond the scope of this example.)
 - Copy the file `terraform.tfvars.skel` to `terraform.tfvars` and update the `REPLACE_ME` entries. It is **required** to update the REPLACE_ME entries with valid values! Use `gcloud config list` to see your current project, zone, and region.
