@@ -61,3 +61,13 @@ variable "automatic_restart" {
   default     = "true"
   description = "Specifies if the instance should be restarted if it was terminated by GCE"
 }
+
+#
+# Specifies that the VM may be stopped by GCP for hw/configuration changes.
+# If this is set to false then the user must manually stop the VM before
+# the change can be completed.
+#
+variable "allow_stopping_for_update" {
+  default     = "true"
+  description = "Specifies that the VM may be stopped by GCP for hw/configuration changes"
+}

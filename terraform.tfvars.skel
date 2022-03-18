@@ -14,3 +14,8 @@ vm_name      = "REPLACE_ME" # e.g. "my-rei-vm"
 # maintenance       = "REPLACE_ME" # "MIGRATE" or "TERMINATE"
 # preemptible       = "REPLACE_ME" # "true" or "false"
 # automatic_restart = "REPLACE_ME" # "true" or "false"
+#
+#
+# Additional variables that have defaults but which can be overwritten ehre
+#
+# allow_stopping_for_update = "REPLACE_ME" # "true" or "false"
