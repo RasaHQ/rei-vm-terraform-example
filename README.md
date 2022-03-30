@@ -38,5 +38,9 @@ The MOTD (message of the day) after SSH'ing into the new VM instance will inform
 - Adds some handy kubectl aliases
 
 ---
+### Additional notes
+Terraform keeps a record of the infrastructure components it is managing in the `terraform.tfstate` file, which resides in the same directory as your other terraform files. If you make changes to your instance outside of terraform and then run another `terraform apply`, terraform will perform any necessary actions to ensure the managed component matches the values you have defined locally. ***This means it could delete your existing virtual machine, depending on which items changed.***
+
+---
 ### Feedback
 If you have any feedback please submit an [issue](/issues)!
